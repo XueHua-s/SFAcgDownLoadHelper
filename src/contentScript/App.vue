@@ -4,7 +4,7 @@
       <n-dialog-provider>
         <n-notification-provider>
           <n-message-provider>
-            <content />
+            <content v-if="isRender" />
           </n-message-provider>
         </n-notification-provider>
       </n-dialog-provider>
@@ -13,15 +13,27 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import {
   NConfigProvider,
   NLoadingBarProvider,
   NDialogProvider,
   NNotificationProvider,
   NMessageProvider,
-  zhCN
+  zhCN,
+  useMessage
 } from 'naive-ui'
+import { sfHost, sfMHost } from '~/const/shifferHost'
 import Content from './Content.vue'
+const message = useMessage()
+const isRender = computed(() => {
+  if (location.host === sfHost) {
+    return true
+  } else if (location.host === sfMHost) {
+    message.error('插件暂不支持在移动端进行下载')
+  }
+  return false
+})
 </script>
 <style>
 * {

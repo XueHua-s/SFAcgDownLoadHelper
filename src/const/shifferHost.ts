@@ -1,2 +1,2 @@
-const sfHost = 'book.sfacg.com'
-const sfMHost = 'm.sfacg.com/'
+export const sfHost = 'book.sfacg.com'
+export const sfMHost = 'm.sfacg.com/'

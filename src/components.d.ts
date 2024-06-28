@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    NResult: typeof import('naive-ui')['NResult']
+    NButton: typeof import('naive-ui')['NButton']
+    NPopover: typeof import('naive-ui')['NPopover']
   }
 }
