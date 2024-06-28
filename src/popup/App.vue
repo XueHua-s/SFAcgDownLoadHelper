@@ -1,22 +1,17 @@
 <script setup lang="ts">
-const counter = ref<number>(1)
-const handleClick = () => {
-  counter.value++
-}
+import sfGril from '~/assets/sf-gril.jpg'
 </script>
 
 <template>
-  <div data-root="true" class="min-h-100px min-w-100px flex-col-center">
-    <span
-      ><i-logos:vitejs /><i-svg-spinners:3-dots-scale-middle
-        class="ml-2" /><i-logos:vue class="ml-2"
-    /></span>
-    <n-button @click="handleClick"
-      >{{ counter
-      }}<template #icon>
-        <n-icon>
-          <i-line-md:github-twotone />
-        </n-icon> </template
-    ></n-button>
+  <div data-root="true" class="w-480px">
+    <n-result
+      status="info"
+      title="小萝还没有设置项哦!"
+      description="好东西是需要慢慢等待的。"
+    >
+      <template #icon>
+        <img class="w-120px" :src="sfGril" />
+      </template>
+    </n-result>
   </div>
 </template>

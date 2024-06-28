@@ -1,8 +1,8 @@
 {
-  "name": "Matrix插件模板",
-  "version": "0.0.1",
+  "name": "SF轻小说下载助手",
+  "version": "1.0.0.0",
   "manifest_version": 3,
-  "description": "一个基本的插件模板",
+  "description": "妈妈再也不用担心你在学校里用mp4没小说看了",
   "icons": {
     "16": "/assets/sf-gril.jpg",
     "48": "/assets/sf-gril.jpg",
@@ -10,7 +10,7 @@
     "128": "/assets/sf-gril.jpg"
   },
   "action": {
-    "default_title": "Matrix",
+    "default_title": "SF轻小说下载助手",
     "default_popup": "/popup/index.html"
   },
   "permissions": [

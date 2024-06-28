@@ -45,7 +45,8 @@
   "dependencies": {
     "@vueuse/core": "^10.1.0",
     "idb": "^7.1.1",
-    "naive-ui": "^2.34.3"
+    "naive-ui": "^2.34.3",
+    "sass": "^1.77.6"
   },
   "lint-staged": {
     "src/**/*.{js,ts,vue}": "eslint src --quiet --ext .js,.ts,.vue"
