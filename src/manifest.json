@@ -4,10 +4,10 @@
   "manifest_version": 3,
   "description": "一个基本的插件模板",
   "icons": {
-    "16": "/assets/dev.png",
-    "48": "/assets/dev.png",
-    "96": "/assets/dev.png",
-    "128": "/assets/dev.png"
+    "16": "/assets/sf-gril.jpg",
+    "48": "/assets/sf-gril.jpg",
+    "96": "/assets/sf-gril.jpg",
+    "128": "/assets/sf-gril.jpg"
   },
   "action": {
     "default_title": "Matrix",
